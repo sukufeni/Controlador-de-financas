@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent">
+    <EditText
+        android:inputType="text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/descricaoItem"
+        android:layout_marginLeft="0.0dp"
+        android:clickable="true"
+        android:hint="Cartão" />
+    <EditText
+        android:inputType="number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/valorItem"
+        android:numeric="decimal"
+        android:clickable="true"
+        android:hint="valores" />
+    <Button
+        android:text="Soma tudo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnValorAtual"
+        android:layout_gravity="right" />
+    <Button
+        android:text="Selecionar Cartão"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnSelecionarCartao"
+        android:layout_gravity="left"
+        android:layout_marginLeft="0.0dp"
+        android:layout_marginRight="0.0dp"
+        android:clickable="true" />
+    <Button
+        android:text="adicionar item"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnAdicionaItem" />
+    <Button
+        android:text="Novo Cartão"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnNovoCartao"
+        android:layout_marginRight="0.0dp"
+        android:clickable="true"
+        android:layout_gravity="top" />
+    <ListView
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/listaCartoes"
+        android:layout_marginTop="0.0dp" />
+</LinearLayout>
