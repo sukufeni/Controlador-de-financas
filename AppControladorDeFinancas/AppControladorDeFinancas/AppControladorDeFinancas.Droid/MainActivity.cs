@@ -49,9 +49,10 @@ namespace AppControladorDeFinancas.Droid
 
             btnNovoCartao.Click += delegate { if (descricaoCartao.Text != "" && descricaoCartao.Text != null) adicionaCartao(Convert.ToString(descricaoCartao.Text)); else this.descricaoCartao.Text = "preencha o nome do cartão!"; };
             btnAdcionaItem.Click += delegate { };
-            btnSelecionaCartao.Click += delegate { };
+            btnSelecionaCartao.Click += delegate { descricaoCartao.Text = lista.SelectedItem.ToString(); };
             btnValorAtual.Click += delegate { };
         }
+        
         private void adicionaCartao(string textoCartao)
         {
             cartoes.Add(new Cartao(textoCartao));

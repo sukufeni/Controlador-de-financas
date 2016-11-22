@@ -26,7 +26,6 @@ namespace AppControladorDeFinancas
             this.descricaoValores.Add(descricaoValor);
 
         }
-
         public double somaValores()
         {
             double soma = 0;
